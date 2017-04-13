@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%;
+  width: 100%;
+  font-size: 100px; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("/font/iconfont.eot");
+  src: url("/font/iconfont.eot?#iefix") format("embedded-opentype"), url("/font/iconfont.woff") format("woff"), url("/font/iconfont.ttf") format("truetype"), url("/font/iconfont.svg#iconfont") format("svg"); }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  height: 100%;
+  width: 100%; }
+  body #app {
+    height: 100%;
+    width: 100%; }
+    body #app .index {
+      width: 100%;
+      height: 100%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      body #app .index section {
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        width: 100%; }
+      body #app .index > nav {
+        background: #fff;
+        height: .48rem;
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        position: fixed;
+        bottom: 0; }
+        body #app .index > nav a {
+          display: block;
+          -webkit-flex: 1;
+              -ms-flex: 1;
+                  flex: 1;
+          text-align: center;
+          font-size: .14rem;
+          background: #fff;
+          color: #333; }
+          body #app .index > nav a i {
+            font-size: .2rem;
+            display: inline-block;
+            width: 100%;
+            margin-top: .05rem; }
+          body #app .index > nav a span {
+            font-size: .12rem;
+            font-weight: 700; }
+        body #app .index > nav a.active {
+          color: green; }
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .main header {
+    z-index: 100;
+    height: .4rem;
+    font-size: .14rem;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    padding-top: .2rem;
+    position: fixed;
+    top: 0;
+    width: 100%; }
+    .main header input {
+      background: #ddd;
+      border: 0;
+      height: .3rem;
+      width: 75%;
+      border-radius: .15rem;
+      margin: 0.05rem .2rem 0 .2rem;
+      text-indent: .1rem;
+      outline: none; }
+  .main section {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    width: 100%;
+    padding: .6rem 0 .48rem 0;
+    overflow-y: scroll; }
+    .main section > nav.nav_category {
+      font-size: .12rem;
+      width: 100%;
+      overflow: hidden;
+      padding: .05rem 0; }
+      .main section > nav.nav_category div {
+        display: inline-block;
+        width: 25%;
+        height: .6rem;
+        text-align: center; }
+        .main section > nav.nav_category div p {
+          color: #929ea6;
+          line-height: .24rem; }
+    .main section > article {
+      margin: .1rem 0;
+      width: 100%;
+      font-size: .12rem;
+      overflow-x: scroll;
+      white-space: nowrap;
+      height: .5rem;
+      padding: .1rem 0;
+      overflow-y: hidden;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc; }
+      .main section > article > div {
+        width: 25%;
+        height: .5rem;
+        display: inline-block;
+        background: greenyellow;
+        margin: 0 .1rem; }
+    .main section > nav.nav_list {
+      width: 100%;
+      font-size: .16rem;
+      color: #747474;
+      overflow: hidden; }
+      .main section > nav.nav_list > div {
+        width: 100%;
+        height: .9rem;
+        padding-bottom: 3%;
+        border-top: 1px solid #ccc; }
+        .main section > nav.nav_list > div > div.left {
+          width: 64%;
+          margin: 3% 3% 0 3%;
+          height: 90%;
+          float: left; }
+          .main section > nav.nav_list > div > div.left > p {
+            width: 90%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; }
+          .main section > nav.nav_list > div > div.left > dl {
+            width: 100;
+            height: 100%;
+            margin-top: .1rem;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                    flex-direction: row; }
+            .main section > nav.nav_list > div > div.left > dl dt {
+              width: .4rem;
+              height: .4rem;
+              border-radius: 50%;
+              background: black; }
+            .main section > nav.nav_list > div > div.left > dl dd {
+              -webkit-flex: 1;
+                  -ms-flex: 1;
+                      flex: 1;
+              height: .4rem;
+              text-indent: .1rem; }
+              .main section > nav.nav_list > div > div.left > dl dd span {
+                display: block; }
+              .main section > nav.nav_list > div > div.left > dl dd span.author {
+                color: black;
+                font-size: .14rem; }
+              .main section > nav.nav_list > div > div.left > dl dd span.say_time {
+                color: #929ea6;
+                font-size: .12rem; }
+        .main section > nav.nav_list > div > div.right {
+          width: 27%;
+          margin-right: 3%;
+          margin-top: 3%;
+          float: right;
+          height: 90%;
+          background: yellow; }
